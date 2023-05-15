@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+    background-color: #141A25;
+}
+
+.main-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-header .logo {
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main-header .logo:hover {
+    color: #0d00ca;
+}
+
+.navigation-menu {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+}
+
+.navigation-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-menu a:hover {
+    color: #0d00ca;
+}
+
+.eclipse {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 590px;
+    top: 160px;
+}
+
+.img {
+    position: absolute;
+    width: 500px;
+    height: 420px;
+    left: 280px;
+    top: 200px;
+}
+
+.eclipse2 {
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 250px;
+    top: 430px;
+
+}
+
+.slm {
+    position: absolute;
+    width: 500px;
+    left: 60rem;
+    top: 15rem;
+    color: white;
+    font-style: normal;
+    font-weight: 398;
+    font-size: 64px;
+    line-height: 75px;
+}
+
+.tmd1000 {
+    position: absolute;
+    width: 570px;
+    height: 28px;
+    left: 60rem;
+    top: 22rem;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+button {
+    position: absolute;
+    width: 180px;
+    height: 55px;
+    left: 60rem;
+    top: 27rem;
+    background: #1762A7;
+    cursor: pointer;
+    border: none;
+    border-radius: 13px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+button a:hover {
+    color: #000000;
+}
+
+
+
+/** button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, white, blue, pink, white, blue, pink);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    90% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+**/
+
+.headph {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 80rem;
+    top: 30rem;
+
+}
+
+
+.container-footer {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: 104px;
+    left: 0px;
+    top: 825px;
+    background: #000000;
+}
+
+.main-footer .descargar {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 10rem;
+}
+
+.main-footer .descargar:hover {
+    color: #0d00ca;
+}
+
+.navigation-menu2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 28px;
+    gap: 50px;
+    padding-right: 10rem;
+    list-style: none;
+}
+
+.navigation-menu2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation-menu2 a:hover {
+    color: #0d00ca;
+}
+
+.close {
+    padding-left: 9rem;
+    padding-top: 3rem;
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 15px;
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.contra {
+    font-weight: 300;
+}
+
+.user {
+    font-weight: 300;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1762A7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #1762A7;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+/* UNIRSE */
+
+.unirse-page {
+    background: #000000e7;
+    opacity: 0.9;
+}
+
+.eclipse-unirse {
+    display: flex;
+    position: relative;
+    padding-left: 1000px;
+}
+
+.eclipse3-unirse {
+    display: flex;
+    padding-left: 1400px;
+}
+
+.eclipse2-unirse {
+    display: flex;
+    position: relative;
+    padding-left: 200px;
+    z-index: -1;
+}
+
+.ache1 {
+    position: absolute;
+    width: 538px;
+    height: 70px;
+    left: 370px;
+    top: 40%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.ache1 span{
+    color: #4070f4;
+    padding-left: 15px;
+    text-decoration: none;
+}
+
+.unirse-box {
+    width: 320px;
+    height: 500px;
+    background: #353535;
+    color: #fff;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 15px;
+}
+
+
+.unirse-box h1 {
+    margin: 0;
+    padding: 0 0 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.unirse-box label {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.contra {
+    font-weight: 300;
+}
+
+.user {
+    font-weight: 300;
+}
+
+.unirse-box input {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.unirse-box input[type="text"],
+.unirse-box input[type="password"],
+.unirse-box input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.unirse-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1762A7;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.unirse-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #1762A7;
+}
+
+.unirse-box a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+
+form .have-acc h3 {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+
+form .have-acc h3 a {
+    width: 100%;
+    color: #4070f4;
+    text-decoration: none;
+}
+
+form .have-acc h3 a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* DESCUBRIR */
+
+.descubrebody {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-desc h1 {
+    position: absolute;
+    width: 552px;
+    height: 61px;
+    left: 240px;
+    top: 228px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 370;
+    font-size: 52px;
+    line-height: 61px;
+    color: white;
+}
+
+.albumtop {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    left: 1200px;
+    top: 228px;
+}
+
+.img-desc {
+    position: absolute;
+    width: 451px;
+    height: 157px;
+    left: 240px;
+    top: 370px;
+
+}
+
+.main-desc p {
+    position: absolute;
+    width: 614px;
+    height: 52px;
+    left: 240px;
+    top: 600px;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 390;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.disco1 {
+    position: absolute;
+    width: 239px;
+    height: 239px;
+    left: 1100px;
+    top: 100px;
+    z-index: -1;
+}
+
+.disco2 {
+    position: absolute;
+    width: 239px;
+    height: 239px;
+    left: 1570px;
+    top: 590px;
+    z-index: -1;
+}
+
+
+/*DESCARGAR*/
+
+.main-descargar h1 {
+    position: absolute;
+    width: 626px;
+    height: 70px;
+    left: 400px;
+    top: 245px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    gap: 13px;
+}
+
+.main-descargar span {
+    color: #111988;
+}
+
+.main-descargar p {
+    position: absolute;
+    width: 496px;
+    height: 50px;
+    left: 427px;
+    top: 330px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 32px;
+    color: white;
+}
+
+.main-descargar h2 {
+    position: absolute;
+    width: 320px;
+    height: 28px;
+    left: 500px;
+    top: 510px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+}
+
+.stores {
+    position: absolute;
+    width: 222px;
+    height: 136px;
+    left: 550px;
+    top: 560px;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 1303px;
+    top: 179px;
+    z-index: 1;
+}
+
+.phoneapp {
+    position: absolute;
+    width: 255px;
+    height: 522px;
+    left: 1250px;
+    top: 229px;
+}
+
+.eclipdesc {
+    position: absolute;
+    width: 216px;
+    height: 216px;
+    left: 400px;
+    top: 557px;
+    z-index: -1;
+}
+
+.eclipdesc2 {
+    position: absolute;
+    width: 216px;
+    height: 216px;
+    left: 1370px;
+    top: 99px;
+    z-index: -2;
+}
