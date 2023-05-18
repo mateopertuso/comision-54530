@@ -7,35 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="container">
-            <a href="#" class="logo">Logo</a>
-            <nav class="navigation-wrapper">
-                <ul class="navigation-menu">
+    <header class="nav-wraper">
+        <nav>
+            <a class="logo" href="">Logo</a>
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+                <ul>
                     <li><a href="./pages/descubre.html">Descubrir</a></li>
                     <li><a href="./pages/iniciarsesion.html">Iniciar Sesión</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <main class="main-section">
-        <img class="eclipse" src="./assets/images/eclipse-3.png" alt="eclipse">
-        <img class="eclipse2" src="./assets/images/eclipse-2.png" alt="eclipse">
-        <img class="img" src="./assets/images/hombre-escuchandomusica.png" alt="escuchando">
-        <h1 class="slm">
-            Sentí la música
-        </h1>
-        <p class="tmd1000">
-            Transmita más de 20mil canciones con un solo click.
-        </p>
-        <button>
-            <a href="./pages/unirse.html">Únete ahora</a>
-        </button>
-        <img class="headph" src="./assets/images/pink-headphones.png" alt="headphones">
+    <main>
+        <div class="main-section">
+            <img class="eclipse" src="./assets/images/eclipse-3.png" alt="eclipse">
+            <img class="eclipse2" src="./assets/images/eclipse-2.png" alt="eclipse">
+            <img class="img" src="./assets/images/hombre-escuchandomusica.png" alt="escuchando">
+            <h1 class="slm">
+                Sentí la música
+            </h1>
+            <p class="tmd1000">
+                Transmita más de 20mil canciones con un solo click.
+            </p>
+            <button>
+                <a href="./pages/unirse.html">Únete ahora</a>
+            </button>
+            <img class="headph" src="./assets/images/pink-headphones.png" alt="headphones">
+        </div>
     </main>
     <footer class="main-footer">
         <div class="container-footer">
@@ -43,11 +48,11 @@
             <ul class="navigation-menu2">
                 <li>
                     <a href="#" class="fa fa-twitter"></a>
-                    <a href="#">Twitter</a>
+                    <a href="#" class="text">Twitter</a>
                 </li>
                 <li>
                     <a href="#" class="fa fa-facebook"></a>
-                    <a href="#">Facebook</a>
+                    <a href="#" class="text">Facebook</a>
                 </li>
             </ul>
         </div>
