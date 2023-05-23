@@ -797,6 +797,28 @@ form .have-acc h3 a:hover {
         gap: 30px;
         padding-right: 5rem;
     }
+
+
+    /**PAGINA INICIAR SESION**/
+
+    .close img {
+        height: 70px;
+    }
+
+    .login-box {
+        width: 300px;
+        border-radius: 13px;
+    }
+
+    .login-box h1 {
+        font-size: 20px;
+    }
+
+    .login-box input {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
 }
 
 /**dispositivos tablets*/
@@ -918,6 +940,29 @@ form .have-acc h3 a:hover {
         gap: 27px;
         padding-right: 3rem;
     }
+
+    /**PAGINA INICIAR SESION**/
+
+    .close img {
+        height: 60px;
+    }
+
+    .login-box {
+        width: 280px;
+        border-radius: 11px;
+    }
+
+    .login-box h1 {
+        font-size: 18px;
+    }
+
+    .login-box input {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+
 }
 
 
@@ -993,6 +1038,21 @@ form .have-acc h3 a:hover {
 
     .navigation-menu2 {
         padding-right: 1rem;
+    }
+
+    /**PAGINA INICIAR SESION**/
+
+    .body-is {
+        background-color: #000000e8;
+    }
+
+    .close {
+        padding-left: 70%;
+    }
+
+    .login-box {
+        width: 280px;
+        border-radius: 10px;
     }
 }
 
