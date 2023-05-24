@@ -467,23 +467,63 @@ form .have-acc h3 a:hover {
 
 /* DESCUBRIR */
 
-.descubrebody {
-    display: flex;
-    flex-wrap: wrap;
+
+.grid{
+    display: grid;
+    width: 100%;
+    height: 750px;
+    margin: 10px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "n1  n4"
+        "n2  n4"
+        "n3  n4"
+        "n3  n4"
+    ;
+    gap: 20px;
 }
 
-.main-desc h1 {
-    position: absolute;
-    width: 552px;
-    height: 61px;
-    left: 240px;
-    top: 228px;
-    font-family: 'Roboto';
-    font-style: normal;
+.item{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.item1{
+    grid-area: n1;
+    padding-top: 80px;
+}
+
+.h1-descubrir {
     font-weight: 370;
-    font-size: 52px;
-    line-height: 61px;
-    color: white;
+    font-size: 45px;
+}
+
+.item2{
+    grid-area: n2;
+    padding-top: 0px;
+}
+
+.img-desc {
+    grid-area: img-desc;
+    left: 240px;
+}
+
+.item3{
+    grid-area: n3;
+    margin: 30px 150px 0px 150px;
+}
+
+.item3 p {
+    top: 600px;
+    font-weight: 300;
+    font-size: 25px;
+    padding: 0px 20px;
+}
+
+.item4{
+    grid-area: n4;
+
 }
 
 .albumtop {
@@ -493,30 +533,6 @@ form .have-acc h3 a:hover {
     left: 1200px;
     top: 228px;
 }
-
-.img-desc {
-    position: absolute;
-    width: 451px;
-    height: 157px;
-    left: 240px;
-    top: 370px;
-
-}
-
-.main-desc p {
-    position: absolute;
-    width: 614px;
-    height: 52px;
-    left: 240px;
-    top: 600px;
-    color: white;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 390;
-    font-size: 22px;
-    line-height: 26px;
-}
-
 .disco1 {
     position: absolute;
     width: 239px;
@@ -533,7 +549,7 @@ form .have-acc h3 a:hover {
     left: 1570px;
     top: 590px;
     z-index: -1;
-}
+} 
 
 
 /*DESCARGAR*/
