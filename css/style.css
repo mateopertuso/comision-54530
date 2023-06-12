@@ -1,1194 +1,1735 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,300;1,400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,300;1,400&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', 'sans-serif';
-    background-color: #141A25;
+  font-family: "Roboto", "sans-serif";
+  background-color: #141A25;
 }
 
-.nav-wraper {
-    width: 100%;
-    margin: 0 auto;
+header {
+  width: 100%;
+  margin: 0 auto;
 }
 
-
-nav {
-    display: flex;
-    position: fixed;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    width: 100%;
-    margin: 0;
+header nav {
+  display: flex;
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  margin: 0;
 }
 
-nav .logo {
-    font-weight: 400;
-    font-size: 30px;
+header nav .logo {
+  font-weight: 400;
+  font-size: 30px;
 }
 
-nav .logo:hover {
-    color: #0d00ca;
+header nav .logo:hover {
+  color: #0d00ca;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 3rem;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
+header nav a {
+  text-decoration: none;
+  color: white;
 }
 
-nav #toggle,
-nav label {
-    display: none;
+header nav a:hover {
+  color: #0d00ca;
 }
 
-
-.menu a:hover {
-    color: #0d00ca;
+header nav #toggle,
+header nav label {
+  display: none;
 }
 
 .main-section {
-    display: flex;
-    max-width: 100%;
+  display: flex;
+  max-width: 100%;
 }
 
-.eclipse {
-    position: absolute;
-    width: 160px;
-    height: 160px;
-    left: 590px;
-    top: 160px;
+.main-section .eclipse {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  left: 590px;
+  top: 160px;
 }
 
-.img {
-    position: absolute;
-    width: 500px;
-    height: 420px;
-    left: 280px;
-    top: 200px;
+.main-section .img {
+  position: absolute;
+  width: 500px;
+  height: 420px;
+  left: 280px;
+  top: 200px;
 }
 
-.eclipse2 {
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    left: 250px;
-    top: 430px;
-
+.main-section .eclipse2 {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  left: 250px;
+  top: 430px;
 }
 
-.slm {
-    position: absolute;
-    width: 500px;
-    left: 60rem;
-    top: 15rem;
-    color: white;
-    font-style: normal;
-    font-weight: 398;
-    font-size: 64px;
-    line-height: 75px;
+.main-section .slm {
+  position: absolute;
+  width: 500px;
+  left: 60rem;
+  top: 15rem;
+  color: white;
+  font-style: normal;
+  font-weight: 398;
+  font-size: 64px;
+  line-height: 75px;
 }
 
-.tmd1000 {
-    position: absolute;
-    width: 570px;
-    height: 28px;
-    left: 60rem;
-    top: 22rem;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 24px;
-    line-height: 28px;
-    color: #FFFFFF;
+.main-section .tmd1000 {
+  position: absolute;
+  width: 570px;
+  height: 28px;
+  left: 60rem;
+  top: 22rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
 }
 
-button {
-    position: absolute;
-    width: 180px;
-    height: 55px;
-    left: 60rem;
-    top: 27rem;
-    background: #1762A7;
-    cursor: pointer;
-    border: none;
-    border-radius: 13px;
-    font-size: 20px;
-    text-align: center;
+.main-section button {
+  position: absolute;
+  width: 180px;
+  height: 55px;
+  left: 60rem;
+  top: 27rem;
+  background: #1762A7;
+  cursor: pointer;
+  border: none;
+  border-radius: 13px;
+  font-size: 20px;
+  text-align: center;
 }
 
-button a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-family: 'Roboto';
-    font-style: normal;
+.main-section button:hover {
+  transform: scale(1.1);
+  transition-duration: 1.2s;
 }
 
-button a:hover {
-    color: #000000;
+.main-section button a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  font-style: normal;
 }
 
-
-
-/** button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, white, blue, pink, white, blue, pink);
-    background-size: 800%;
-    border-radius: 10px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
+.main-section button a:hover {
+  color: #000000;
 }
 
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-
-    90% {
-        background-position: 400% 0;
-    }
-
-    100% {
-        background-position: 0 0;
-    }
-}
-**/
-
-.headph {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 80rem;
-    top: 30rem;
-
+.main-section .headph {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 80rem;
+  top: 30rem;
 }
 
-
-
-
-.container-footer {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    width: 100%;
-    height: 104px;
-    left: 0px;
-    bottom: 0px;
-    background: #000000;
+.main-footer .container-footer {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  width: 100%;
+  height: 104px;
+  left: 0px;
+  bottom: 0px;
+  background: #000000;
 }
 
 .main-footer .descargar {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    padding-left: 10rem;
-    padding-top: 1rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding-left: 10rem;
+  padding-top: 1rem;
 }
 
 .main-footer .descargar:hover {
-    color: #0d00ca;
+  color: #0d00ca;
 }
 
-.navigation-menu2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 24px;
-    line-height: 28px;
-    gap: 50px;
-    padding-right: 10rem;
-    padding-top: 1rem;
-    list-style: none;
+.main-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 28px;
+  gap: 50px;
+  padding-right: 10rem;
+  padding-top: 1rem;
+  list-style: none;
 }
 
-.navigation-menu2 a {
-    color: white;
-    text-decoration: none;
+.main-footer ul a {
+  color: white;
+  text-decoration: none;
 }
 
-.navigation-menu2 a:hover {
-    color: #0d00ca;
+.main-footer ul a:hover {
+  color: #0d00ca;
 }
 
-/**PAGINA NUEVA**/
-
-.close {
-    padding-left: 9rem;
-    padding-top: 3rem;
+header .close {
+  padding-left: 9rem;
+  padding-top: 3rem;
 }
 
-.login-box {
-    width: 320px;
-    height: 420px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 50px 30px;
-    border-radius: 15px;
+main .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "n1  n4" "n2  n4" "n3  n4" "n3  n4";
+  gap: 20px;
+  width: 100%;
+  height: 750px;
+  margin: 10px auto;
 }
 
-.login-box h1 {
-    margin: 0;
-    padding: 0 0 30px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 100;
+main .grid .item {
+  color: #FFFFFF;
+  text-align: center;
 }
 
-.login-box label {
-    margin: 0;
-    padding: 0;
-    display: block;
+main .grid .item1 {
+  grid-area: n1;
+  padding-top: 80px;
 }
 
-.contra {
-    font-weight: 300;
+main .grid .item1 .h1-descubrir {
+  font-weight: 370;
+  font-size: 45px;
 }
 
-.user {
-    font-weight: 300;
+main .grid .item2 {
+  grid-area: n2;
+  padding-top: 0px;
 }
 
-.login-box input {
-    width: 100%;
-    margin-bottom: 40px;
+main .grid .item2 .img-desc {
+  grid-area: img-desc;
+  left: 240px;
 }
 
-.login-box input[type="text"],
-.login-box input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
+main .grid .item3 {
+  grid-area: n3;
+  margin: 30px 150px 0px 150px;
 }
 
-.login-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #1762A7;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
+main .grid .item3 p {
+  top: 600px;
+  font-weight: 300;
+  font-size: 25px;
+  padding: 0px 20px;
 }
 
-.login-box input[type="submit"]:hover {
-    cursor: pointer;
-    background: #fff;
-    color: #1762A7;
+main .grid .item4 {
+  grid-area: n4;
+  display: grid;
 }
 
-.login-box a {
-    text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
-    color: darkgrey;
+main .grid .item4 .albumtop {
+  padding-left: 100px;
+  margin-top: 50px;
 }
 
-/* UNIRSE */
+main .grid .item4 .disco1 {
+  margin-top: -660px;
+  margin-left: -15px;
+  z-index: -1;
+}
+
+main .grid .item4 .disco2 {
+  width: 239px;
+  height: 239px;
+  margin-left: 444px;
+  margin-top: -280px;
+  z-index: -1;
+}
+
+main .login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+  border-radius: 15px;
+}
+
+main .login-box h1 {
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+main .login-box label {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+main .login-box label .contra {
+  font-weight: 300;
+}
+
+main .login-box label .user {
+  font-weight: 300;
+}
+
+main .login-box input {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+main .login-box input[type=text],
+main .login-box input[type=password] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+main .login-box input[type=submit] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1762A7;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+main .login-box input[type=submit]:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #1762A7;
+}
 
 .unirse-page {
-    background: #000000e7;
-    opacity: 0.9;
+  background: rgba(0, 0, 0, 0.9058823529);
+  opacity: 0.9;
 }
 
-.eclipse-unirse {
-    display: flex;
-    position: relative;
-    padding-left: 1000px;
+.main-unirse .ache1 {
+  position: absolute;
+  height: 70px;
+  left: 370px;
+  top: 40%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 
-.eclipse3-unirse {
-    display: flex;
-    padding-left: 1400px;
+.main-unirse .ache1 span {
+  color: #4070f4;
+  padding-left: 12px;
+  text-decoration: none;
 }
 
-.eclipse2-unirse {
-    display: flex;
-    position: relative;
-    padding-left: 200px;
-    z-index: -1;
+.main-unirse .eclipse-unirse {
+  padding-left: 1000px;
 }
 
-.ache1 {
-    position: absolute;
-    width: 538px;
-    height: 70px;
-    left: 370px;
-    top: 40%;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
+.main-unirse .eclipse2-unirse {
+  display: flex;
+  padding-left: 200px;
+  z-index: -1;
 }
 
-.ache1 span {
-    color: #4070f4;
-    padding-left: 15px;
-    text-decoration: none;
+.main-unirse .eclipse3-unirse {
+  display: flex;
+  padding-left: 1400px;
 }
 
-.unirse-box {
-    width: 320px;
-    height: 500px;
-    background: #353535;
-    color: #fff;
-    top: 50%;
-    left: 70%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 50px 30px;
-    border-radius: 15px;
+.main-unirse .unirse-box {
+  width: 320px;
+  height: 500px;
+  background: #353535;
+  color: #fff;
+  top: 260px;
+  left: 1200px;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 50px 30px;
+  border-radius: 15px;
 }
 
-
-.unirse-box h1 {
-    margin: 0;
-    padding: 0 0 30px;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 100;
+.main-unirse .unirse-box label {
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
-.unirse-box label {
-    margin: 0;
-    padding: 0;
-    display: block;
+.main-unirse .unirse-box .contra {
+  font-weight: 300;
 }
 
-.contra {
-    font-weight: 300;
+.main-unirse .unirse-box .user {
+  font-weight: 300;
 }
 
-.user {
-    font-weight: 300;
+.main-unirse .unirse-box input {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
-.unirse-box input {
-    width: 100%;
-    margin-bottom: 40px;
+.main-unirse .unirse-box input[type=text],
+.main-unirse .unirse-box input[type=password],
+.main-unirse .unirse-box input[type=email] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
 }
 
-.unirse-box input[type="text"],
-.unirse-box input[type="password"],
-.unirse-box input[type="email"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
+.main-unirse .unirse-box input[type=submit] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1762A7;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
 }
 
-.unirse-box input[type="submit"] {
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #1762A7;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
+.main-unirse .unirse-box input[type=submit]:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #1762A7;
 }
 
-.unirse-box input[type="submit"]:hover {
-    cursor: pointer;
-    background: #fff;
-    color: #1762A7;
+.main-unirse .unirse-box .have-acc h3 {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
 }
 
-.unirse-box a {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
+.main-unirse .unirse-box .have-acc a {
+  width: 100%;
+  color: #4070f4;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
 }
 
-form .have-acc h3 {
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-    font-weight: 400;
+.main-unirse .unirse-box .have-acc a:hover {
+  text-decoration: underline;
 }
-
-form .have-acc h3 a {
-    width: 100%;
-    color: #4070f4;
-    text-decoration: none;
-}
-
-form .have-acc h3 a:hover {
-    text-decoration: underline;
-}
-
-
-
-/* DESCUBRIR */
-
-
-.grid{
-    display: grid;
-    width: 100%;
-    height: 750px;
-    margin: 10px auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-        "n1  n4"
-        "n2  n4"
-        "n3  n4"
-        "n3  n4"
-    ;
-    gap: 20px;
-}
-
-.item{
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.item1{
-    grid-area: n1;
-    padding-top: 80px;
-}
-
-.h1-descubrir {
-    font-weight: 370;
-    font-size: 45px;
-}
-
-.item2{
-    grid-area: n2;
-    padding-top: 0px;
-}
-
-.img-desc {
-    grid-area: img-desc;
-    left: 240px;
-}
-
-.item3{
-    grid-area: n3;
-    margin: 30px 150px 0px 150px;
-}
-
-.item3 p {
-    top: 600px;
-    font-weight: 300;
-    font-size: 25px;
-    padding: 0px 20px;
-}
-
-.item4{
-    grid-area: n4;
-
-}
-
-.albumtop {
-    position: absolute;
-    width: 470px;
-    height: 470px;
-    left: 1200px;
-    top: 228px;
-}
-.disco1 {
-    position: absolute;
-    width: 239px;
-    height: 239px;
-    left: 1100px;
-    top: 100px;
-    z-index: -1;
-}
-
-.disco2 {
-    position: absolute;
-    width: 239px;
-    height: 239px;
-    left: 1570px;
-    top: 590px;
-    z-index: -1;
-} 
-
-
-/*DESCARGAR*/
 
 .main-descargar h1 {
-    position: absolute;
-    width: 626px;
-    height: 70px;
-    left: 400px;
-    top: 245px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 70px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    gap: 13px;
+  position: absolute;
+  left: 400px;
+  top: 245px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  gap: 13px;
 }
 
 .main-descargar span {
-    color: #111988;
+  color: #111988;
 }
 
 .main-descargar p {
-    position: absolute;
-    width: 496px;
-    height: 50px;
-    left: 427px;
-    top: 330px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 32px;
-    color: white;
+  position: absolute;
+  width: 496px;
+  height: 50px;
+  left: 427px;
+  top: 330px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
 }
 
 .main-descargar h2 {
-    position: absolute;
-    width: 320px;
-    height: 28px;
-    left: 500px;
-    top: 510px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
+  position: absolute;
+  width: 320px;
+  height: 28px;
+  left: 500px;
+  top: 510px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+}
+
+.main-descargar .stores {
+  position: absolute;
+  width: 222px;
+  height: 136px;
+  left: 550px;
+  top: 560px;
+}
+
+.main-descargar .cloud1 {
+  position: absolute;
+  left: 1303px;
+  top: 179px;
+  z-index: 1;
+}
+
+.main-descargar .phoneapp {
+  position: absolute;
+  width: 255px;
+  height: 522px;
+  left: 1250px;
+  top: 229px;
+}
+
+.main-descargar .eclipdesc {
+  position: absolute;
+  width: 216px;
+  height: 216px;
+  left: 400px;
+  top: 557px;
+  z-index: -1;
+}
+
+.main-descargar .eclipdesc2 {
+  position: absolute;
+  width: 216px;
+  height: 216px;
+  left: 1370px;
+  top: 99px;
+  z-index: -2;
+}
+
+@media (max-width: 1440px) {
+  nav {
+    width: 100%;
+  }
+
+  nav .menu {
+    font-size: 20px;
+    gap: 40px;
+  }
+
+  .main-section .eclipse {
+    width: 130px;
+    height: 130px;
+    left: 440px;
+    top: 190px;
+  }
+
+  .main-section .img {
+    width: 470px;
+    height: 400px;
+    left: 140px;
+    top: 210px;
+  }
+
+  .main-section .eclipse2 {
+    width: 170px;
+    height: 170px;
+    left: 140px;
+    top: 450px;
+  }
+
+  .main-section .slm {
+    width: 350px;
+    left: 50rem;
+    font-size: 45px;
+  }
+
+  .main-section .tmd1000 {
+    width: 350px;
+    left: 50rem;
+    top: 20rem;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .main-section button {
+    width: 170px;
+    height: 55px;
+    left: 50rem;
+    top: 24rem;
+    border-radius: 12px;
+  }
+
+  .main-section .headph {
+    width: 220px;
+    height: 220px;
+    left: 57rem;
+    top: 32rem;
+  }
+
+  .main-footer .container-footer {
+    height: 100px;
+    bottom: 0px;
+  }
+
+  .main-footer .descargar {
+    font-weight: 400;
     font-size: 22px;
     line-height: 28px;
-    text-align: center;
-    color: white;
+    padding-left: 10rem;
+    padding-bottom: 1rem;
+  }
+
+  .main-footer .navigation-menu2 {
+    font-size: 22px;
+    line-height: 28px;
+    gap: 40px;
+    padding-bottom: 1rem;
+    padding-right: 10rem;
+  }
+
+  /* UNIRSE */
+  .main-unirse .eclipse-unirse {
+    display: none;
+  }
+
+  .main-unirse .eclipse3-unirse {
+    display: none;
+  }
+
+  .main-unirse .eclipse2-unirse {
+    margin-top: 90px;
+    margin-left: 230px;
+    width: 350px;
+  }
+
+  .main-unirse .ache1 {
+    left: 33%;
+    top: 18%;
+    font-size: 47px;
+  }
+
+  .main-unirse .unirse-box {
+    width: 320px;
+    top: 270px;
+    left: 37%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 15px;
+  }
+
+  /* descargar */
+  .main-descargar h1 {
+    left: 260px;
+    top: 245px;
+    font-size: 46px;
+  }
+
+  .main-descargar p {
+    left: 270px;
+    top: 320px;
+  }
+
+  .main-descargar h2 {
+    left: 350px;
+  }
+
+  .main-descargar .stores {
+    width: 220px;
+    left: 410px;
+  }
+
+  .main-descargar .cloud1 {
+    left: 970px;
+  }
+
+  .main-descargar .phoneapp {
+    left: 920px;
+  }
+
+  .main-descargar .eclipdesc {
+    width: 210px;
+    height: 210px;
+    left: 280px;
+  }
+
+  .main-descargar .eclipdesc2 {
+    width: 200px;
+    height: 200px;
+    left: 1060px;
+  }
+
+  /* DESCUBRE */
+  main .grid {
+    width: 100%;
+    height: 600px;
+    margin: 5px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "n1  n4" "n2  n4" "n3  n4";
+    gap: 10px;
+    /* .item {
+        color: #FFFFFF;
+        text-align: center;
+    } */
+    /*     
+    .item2 {
+        grid-area: n2;
+        padding-top: 0px;
+    }  */
+  }
+
+  main .grid .item1 {
+    grid-area: n1;
+    padding-top: 120px;
+  }
+
+  main .grid .h1-descubrir {
+    font-weight: 370;
+    font-size: 40px;
+  }
+
+  main .grid .img-desc {
+    grid-area: img-desc;
+    width: 400px;
+    padding-top: 10px;
+  }
+
+  main .grid .item3 {
+    grid-area: n3;
+    margin: 0px 150px 0px 150px;
+  }
+
+  main .grid .item3 p {
+    font-size: 23px;
+  }
+
+  main .grid .item4 {
+    grid-area: n4;
+  }
+
+  main .grid .item4 .albumtop {
+    padding-left: 100px;
+    margin-top: 90px;
+    width: 500px;
+  }
+
+  main .grid .item4 .disco1 {
+    width: 180px;
+    margin-top: -510px;
+    margin-left: 15px;
+  }
+
+  main .grid .item4 .disco2 {
+    width: 180px;
+    height: 180px;
+    margin-left: 405px;
+    margin-top: -140px;
+  }
 }
 
-.stores {
-    position: absolute;
-    width: 222px;
-    height: 136px;
-    left: 550px;
-    top: 560px;
-}
+@media (max-width: 1024px) {
+  nav {
+    width: 100%;
+  }
 
-.cloud1 {
+  .main-section .eclipse {
     position: absolute;
-    left: 1303px;
-    top: 179px;
-    z-index: 1;
-}
-
-.phoneapp {
-    position: absolute;
-    width: 255px;
-    height: 522px;
-    left: 1250px;
-    top: 229px;
-}
-
-.eclipdesc {
-    position: absolute;
-    width: 216px;
-    height: 216px;
+    width: 100px;
+    height: 100px;
     left: 400px;
-    top: 557px;
-    z-index: -1;
-}
+    top: 190px;
+  }
 
-.eclipdesc2 {
+  .main-section .img {
     position: absolute;
-    width: 216px;
-    height: 216px;
-    left: 1370px;
-    top: 99px;
-    z-index: -2;
+    width: 450px;
+    height: 370px;
+    left: 120px;
+    top: 200px;
+  }
+
+  .main-section .eclipse2 {
+    width: 150px;
+    height: 150px;
+    left: 130px;
+    top: 420px;
+  }
+
+  .main-section .slm {
+    position: absolute;
+    width: 350px;
+    left: 40rem;
+    font-size: 40px;
+  }
+
+  .main-section .tmd1000 {
+    position: absolute;
+    width: 310px;
+    height: 28px;
+    left: 40rem;
+    top: 20rem;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-section button {
+    width: 155px;
+    height: 50px;
+    left: 40rem;
+    top: 24.5rem;
+    border-radius: 10px;
+  }
+
+  .main-section .headph {
+    width: 180px;
+    height: 180px;
+    left: 45rem;
+    top: 33rem;
+  }
+
+  .main-footer .container-footer {
+    height: 100px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .main-footer .container-footer .descargar {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    padding-left: 5rem;
+  }
+
+  .main-footer .container-footer .navigation-menu2 {
+    font-size: 22px;
+    line-height: 28px;
+    gap: 30px;
+    padding-right: 5rem;
+  }
+
+  /**PAGINA UNIRSE**/
+  .main-unirse .eclipse2-unirse {
+    display: none;
+  }
+
+  .main-unirse .ache1 {
+    left: 29%;
+    top: 16%;
+    font-size: 45px;
+  }
+
+  .main-unirse .unirse-box {
+    left: 32%;
+    top: 24%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    border-radius: 15px;
+  }
+
+  /* descargar */
+  .main-descargar h1 {
+    left: 140px;
+    top: 230px;
+    font-size: 40px;
+  }
+
+  .main-descargar .main-descargar p {
+    left: 155px;
+    top: 300px;
+    font-size: 22px;
+  }
+
+  .main-descargar .main-descargar h2 {
+    left: 200px;
+    top: 630px;
+  }
+
+  .main-descargar .stores {
+    width: 200px;
+    height: 120px;
+    left: 260px;
+    top: 680px;
+  }
+
+  .main-descargar .eclipdesc {
+    width: 180px;
+    height: 180px;
+    top: 700px;
+    left: 200px;
+  }
+
+  .main-descargar .cloud1 {
+    left: 856px;
+  }
+
+  .main-descargar .phoneapp {
+    left: 800px;
+  }
+
+  .main-descargar .eclipdesc2 {
+    width: 200px;
+    height: 200px;
+    left: 1000px;
+  }
+
+  /* DESCUBRE */
+  main .grid .item {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  main .grid .item1 {
+    grid-area: n1;
+    padding-top: 120px;
+  }
+
+  main .grid .item1 .h1-descubrir {
+    font-weight: 370;
+    font-size: 35px;
+  }
+
+  main .grid .item2 {
+    grid-area: n2;
+    padding-top: 0px;
+  }
+
+  main .grid .img-desc {
+    grid-area: img-desc;
+    width: 350px;
+    padding-top: 10px;
+  }
+
+  main .grid .item3 {
+    grid-area: n3;
+    margin: 0px 30px 0px 30px;
+  }
+
+  main .grid .item3 p {
+    font-size: 20px;
+  }
+
+  main .grid .item4 {
+    grid-area: n4;
+  }
+
+  main .grid .item4 .albumtop {
+    padding-left: 100px;
+    margin-top: 130px;
+    width: 380px;
+  }
+
+  main .grid .item4 .disco1 {
+    width: 140px;
+    margin-top: -410px;
+    margin-left: 34px;
+  }
+
+  main .grid .item4 .disco2 {
+    width: 140px;
+    height: 140px;
+    margin-left: 305px;
+    margin-top: -200px;
+  }
 }
 
-/**SIEMPRE AL FINAL DEL CODIGO Y ORDENADO***/
+@media (max-width: 830px) {
 
-@media (max-width:1440px) {
-    nav {
-        width: 100%;
-    }
+  /* DESCUBRE */
+  main .grid {
+    width: 100%;
+    height: 600px;
+    margin: 5px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "n1  n4" "n2  n4" "n3  n4";
+    gap: 10px;
+  }
 
-    .menu {
-        font-size: 20px;
-        gap: 40px;
-    }
+  main .grid .item {
+    color: #FFFFFF;
+    text-align: center;
+  }
 
-    .eclipse {
-        width: 130px;
-        height: 130px;
-        left: 440px;
-        top: 190px;
-    }
+  main .grid .item1 {
+    grid-area: n1;
+    padding-top: 120px;
+  }
 
-    .img {
-        width: 470px;
-        height: 400px;
-        left: 140px;
-        top: 210px;
-    }
+  main .grid .h1-descubrir {
+    font-weight: 370;
+    font-size: 30px;
+  }
 
-    .eclipse2 {
-        width: 170px;
-        height: 170px;
-        left: 140px;
-        top: 450px;
+  main .grid .item2 {
+    grid-area: n2;
+    padding-top: 0px;
+  }
 
-    }
+  main .grid .img-desc {
+    grid-area: img-desc;
+    width: 300px;
+    padding-top: 10px;
+  }
 
-    .slm {
-        width: 350px;
-        left: 50rem;
-        font-size: 45px;
-    }
+  main .grid .item3 {
+    grid-area: n3;
+    margin: 0px 30px 0px 30px;
+  }
 
-    .tmd1000 {
-        width: 350px;
-        left: 50rem;
-        top: 20rem;
-        font-size: 22px;
-        line-height: 22px;
-    }
+  main .grid .item3 p {
+    font-size: 20px;
+  }
 
-    button {
-        width: 170px;
-        height: 55px;
-        left: 50rem;
-        top: 24rem;
-        border-radius: 12px;
-    }
+  main .grid .item4 {
+    grid-area: n4;
+  }
 
-    .headph {
-        width: 220px;
-        height: 220px;
-        left: 57rem;
-        top: 32rem;
-    }
+  main .grid .item4 .albumtop {
+    padding-left: 100px;
+    margin-top: 130px;
+    width: 340px;
+  }
 
-    .container-footer {
-        height: 100px;
-        bottom: 0px;
-    }
+  main .grid .item4 .disco1 {
+    width: 120px;
+    margin-top: -374px;
+    margin-left: 42px;
+  }
 
-    .main-footer .descargar {
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        padding-left: 10rem;
-        padding-bottom: 1rem;
-    }
-
-    .navigation-menu2 {
-        font-size: 22px;
-        line-height: 28px;
-        gap: 40px;
-        padding-bottom: 1rem;
-        padding-right: 10rem;
-    }
+  main .grid .item4 .disco2 {
+    width: 120px;
+    height: 120px;
+    margin-left: 277px;
+    margin-top: -217px;
+  }
 }
 
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    background-color: #000000;
+    border-radius: 0 0 20px 20px;
+  }
 
+  header nav .logo {
+    font-size: 25px;
+  }
 
-@media (max-width:1024px) {
-    nav {
-        width: 100%;
-    }
+  header nav label {
+    display: inline-flex;
+    color: white;
+    cursor: pointer;
+  }
 
-    .eclipse {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        left: 400px;
-        top: 190px;
-    }
+  header nav #toggle:checked~.menu {
+    height: 100%;
+  }
 
-    .img {
-        position: absolute;
-        width: 450px;
-        height: 370px;
-        left: 120px;
-        top: 200px;
-    }
+  header nav .menu {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+  }
 
-    .eclipse2 {
-        width: 150px;
-        height: 150px;
-        left: 130px;
-        top: 420px;
-    }
+  header nav .menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
 
-    .slm {
-        position: absolute;
-        width: 350px;
-        left: 40rem;
-        font-size: 40px;
-    }
+  header nav .menu ul a {
+    font-size: 20px;
+  }
 
-    .tmd1000 {
-        position: absolute;
-        width: 310px;
-        height: 28px;
-        left: 40rem;
-        top: 20rem;
-        font-size: 20px;
-        line-height: 20px;
-    }
+  .main-section .eclipse {
+    width: 80px;
+    height: 80px;
+    left: 63%;
+    top: 190px;
+  }
 
-    button {
-        width: 155px;
-        height: 50px;
-        left: 40rem;
-        top: 24.5rem;
-        border-radius: 10px;
-    }
+  .main-section .img {
+    width: 400px;
+    height: auto;
+    left: 30%;
+    top: 190px;
+  }
 
-    .headph {
-        width: 180px;
-        height: 180px;
-        left: 45rem;
-        top: 33rem;
-    }
+  .main-section .eclipse2 {
+    width: 120px;
+    height: 120px;
+    left: 32%;
+    top: 400px;
+  }
 
-    .container-footer {
-        height: 100px;
-        left: 0px;
-        bottom: 0px;
-        right: 0px;
-    }
+  .main-section .slm {
+    width: 300px;
+    top: 110px;
+    left: 40%;
+    font-size: 30px;
+    z-index: -1;
+  }
 
-    .main-footer .descargar {
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        padding-left: 5rem;
-    }
+  .main-section .tmd1000 {
+    position: absolute;
+    width: 300px;
+    left: 32%;
+    top: 550px;
+    text-align: center;
+  }
 
-    .navigation-menu2 {
-        font-size: 22px;
-        line-height: 28px;
-        gap: 30px;
-        padding-right: 5rem;
-    }
+  .main-section button {
+    position: absolute;
+    width: 135px;
+    height: 45px;
+    left: 43%;
+    top: 620px;
+    border-radius: 10px;
+  }
 
+  .main-section button a {
+    font-size: 18px;
+    font-weight: 200;
+  }
 
-    /**PAGINA INICIAR SESION**/
+  .main-section .headph {
+    display: none;
+  }
 
-    .close img {
-        height: 70px;
-    }
+  .main-footer .container-footer {
+    height: auto;
+  }
 
-    .login-box {
-        width: 300px;
-        border-radius: 13px;
-    }
+  .main-footer .container-footer .descargar {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 3rem;
+  }
 
-    .login-box h1 {
-        font-size: 20px;
-    }
+  .main-footer .container-footer .navigation-menu2 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    gap: 27px;
+    padding-right: 3rem;
+  }
 
-    .login-box input {
-        width: 100%;
-        margin-bottom: 45px;
-    }
+  .main-footer .container-footer .navigation-menu2 .text {
+    display: none;
+  }
 
+  /**PAGINA INICIAR SESION**/
+  .close img {
+    height: 60px;
+  }
+
+  .login-box {
+    width: 280px;
+    border-radius: 11px;
+  }
+
+  .login-box h1 {
+    font-size: 18px;
+  }
+
+  .login-box input {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  /* PAGINA UNIRSE */
+  .main-unirse .ache1 {
+    left: 23%;
+    top: 18%;
+    font-size: 45px;
+  }
+
+  .main-unirse .unirse-box {
+    top: 28%;
+    width: 300px;
+    border-radius: 11px;
+    background-color: #000000;
+  }
+
+  /* descargar */
+  .main-descargar h1 {
+    left: 200px;
+    top: 100px;
+    font-size: 36px;
+  }
+
+  .main-descargar p {
+    display: none;
+  }
+
+  .main-descargar .phoneapp {
+    top: 210px;
+    left: 270px;
+  }
+
+  .main-descargar .cloud1 {
+    left: 325px;
+    top: 160px;
+  }
+
+  .main-descargar h2 {
+    display: none;
+  }
+
+  .main-descargar .stores {
+    width: 220px;
+    top: 749px;
+    left: 287px;
+  }
+
+  .main-descargar .eclipdesc {
+    display: none;
+  }
+
+  .main-descargar .eclipdesc2 {
+    display: none;
+  }
+
+  main .grid {
+    width: 100%;
+    height: 700px;
+    margin: 5px auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "n1  n1" "n2  n2" "n4  n4" "n3  n3";
+    gap: 10px;
+  }
+
+  main .grid .item {
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+  main .grid .item1 {
+    grid-area: n1;
+    padding-top: 0px;
+  }
+
+  main .grid .item1 .h1-descubrir {
+    font-weight: 370;
+    font-size: 30px;
+    padding-top: 0px;
+  }
+
+  main .grid .item2 {
+    grid-area: n2;
+    padding-top: 0px;
+  }
+
+  main .grid .img-desc {
+    grid-area: img-desc;
+    width: 300px;
+    padding-top: 10px;
+  }
+
+  main .grid .item3 {
+    grid-area: n3;
+    margin: 0px 30px 0px 30px;
+  }
+
+  main .grid .item3 p {
+    font-size: 20px;
+  }
+
+  main .grid .item4 {
+    grid-area: n4;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .grid .item4 .albumtop {
+    margin-left: 15%;
+    margin-top: 0px;
+    width: 250px;
+    padding: 0px 0px;
+  }
+
+  main .grid .item4 .disco1 {
+    width: 100px;
+    margin-top: -535px;
+    margin-left: 8px;
+  }
+
+  main .grid .item4 .disco2 {
+    width: 100px;
+    height: 100px;
+    margin-left: 250px;
+    margin-top: -93px;
+  }
 }
 
-/**dispositivos tablets*/
+@media (max-width: 630px) {
 
-@media (max-width:768px) {
+  /* descargar */
+  .main-descargar h1 {
+    left: 140px;
+    top: 100px;
+    font-size: 33px;
+  }
 
-    nav {
-        width: 100%;
-        background-color: #000000;
-        border-radius: 0 0 20px 20px;
-    }
+  .main-descargar .phoneapp {
+    top: 210px;
+    left: 200px;
+  }
 
-    nav .logo {
-        font-size: 25px;
-    }
+  .main-descargar .cloud1 {
+    left: 255px;
+    top: 160px;
+  }
 
-    nav .menu {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0;
-    }
-
-    nav label {
-        display: inline-flex;
-        color: white;
-        cursor: pointer;
-    }
-
-    nav #toggle:checked~.menu {
-        height: 100%;
-    }
-
-    .menu a {
-        font-size: 20px;
-    }
-
-    .eclipse {
-        width: 80px;
-        height: 80px;
-        left: 63%;
-        top: 190px;
-    }
-
-    .img {
-        width: 400px;
-        height: auto;
-        left: 30%;
-        top: 190px;
-    }
-
-    .eclipse2 {
-        width: 120px;
-        height: 120px;
-        left: 32%;
-        top: 400px;
-    }
-
-    .slm {
-        width: 300px;
-        top: 110px;
-        left: 40%;
-        font-size: 30px;
-        z-index: -1;
-    }
-
-    .tmd1000 {
-        position: absolute;
-        width: 300px;
-        left: 32%;
-        top: 550px;
-        text-align: center;
-    }
-
-    button {
-        position: absolute;
-        width: 135px;
-        height: 45px;
-        left: 43%;
-        top: 620px;
-        border-radius: 10px;
-    }
-
-    button a {
-        font-size: 18px;
-        font-weight: 200;
-    }
-
-    .headph {
-        display: none;
-    }
-
-
-    .container-footer {
-        height: auto;
-    }
-
-
-    .main-footer .descargar {
-        font-weight: 300;
-        font-size: 20px;
-        line-height: 28px;
-        padding-left: 3rem;
-    }
-
-    .navigation-menu2 .text {
-        display: none;
-    }
-
-    .navigation-menu2 {
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 28px;
-        gap: 27px;
-        padding-right: 3rem;
-    }
-
-    /**PAGINA INICIAR SESION**/
-
-    .close img {
-        height: 60px;
-    }
-
-    .login-box {
-        width: 280px;
-        border-radius: 11px;
-    }
-
-    .login-box h1 {
-        font-size: 18px;
-    }
-
-    .login-box input {
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-
-
+  .main-descargar .stores {
+    width: 200px;
+    top: 749px;
+    left: 230px;
+  }
 }
 
+@media (max-width: 585px) {
 
-/**dispositivos moviles*/
+  /* PAGINA UNIRSE */
+  .main-unirse .ache1 {
+    left: 18%;
+    top: 17%;
+    font-size: 38px;
+  }
 
-@media (max-width:425px) {
+  .main-unirse .unirse-box {
+    left: 20%;
+    top: 27%;
+    border-radius: 11px;
+    background-color: #000000;
+  }
 
-    nav .logo {
-        font-size: 20px;
-    }
+  /* descargar */
+  .main-descargar h1 {
+    left: 133px;
+    font-size: 30px;
+  }
 
-    .menu a {
-        font-size: 18px;
-    }
+  .main-descargar .phoneapp {
+    top: 200px;
+    left: 170px;
+  }
 
-    .eclipse {
-        width: 50px;
-        height: auto;
-        left: 67%;
-        top: 200px;
-    }
+  .main-descargar .cloud1 {
+    left: 225px;
+    top: 150px;
+  }
 
-    .img {
-        width: 100%;
-        height: auto;
-        left: 3%;
-        top: 150px;
-    }
-
-    .eclipse2 {
-        width: 80px;
-        height: auto;
-        left: 80px;
-        top: 410px;
-    }
-
-    .slm {
-        width: 200px;
-        top: 90px;
-        left: 140px;
-        font-size: 26px;
-    }
-
-    .tmd1000 {
-        width: 300px;
-        left: 70px;
-        top: 530px;
-        text-align: center;
-    }
-
-    button {
-        width: 135px;
-        height: 45px;
-        left: 150px;
-        top: 600px;
-        border-radius: 10px;
-    }
-
-    button a {
-        font-size: 18px;
-        font-weight: 200;
-    }
-
-    .main-footer .descargar {
-        width: 600;
-        font-size: 16px;
-        padding-left: 1rem;
-    }
-
-    .navigation-menu2 .text {
-        display: none;
-    }
-
-    .navigation-menu2 {
-        padding-right: 1rem;
-    }
-
-    /**PAGINA INICIAR SESION**/
-
-    .body-is {
-        background-color: #000000e8;
-    }
-
-    .close {
-        padding-left: 70%;
-    }
-
-    .login-box {
-        width: 280px;
-        border-radius: 10px;
-    }
+  .main-descargar .stores {
+    width: 200px;
+    top: 740px;
+    left: 200px;
+  }
 }
 
-@media (max-width:375px) {
+@media (max-width: 475px) {
 
-    nav .logo {
-        font-size: 18px;
-    }
+  /* descargar */
+  .main-descargar h1 {
+    left: 100px;
+    font-size: 28px;
+  }
 
-    .menu a {
-        font-size: 17px;
-    }
+  .main-descargar .phoneapp {
+    left: 130px;
+  }
 
-    .eclipse {
-        width: 50px;
-        height: 50px;
-        left: 230px;
-        top: 220px;
-    }
+  .main-descargar .cloud1 {
+    left: 185px;
+  }
 
-    .img {
-        width: 90%;
-        height: auto;
-        left: 20px;
-        top: 210px;
-    }
-
-    .eclipse2 {
-        width: 72px;
-        height: 72px;
-        left: 70px;
-        top: 400px;
-    }
-
-    .slm {
-        top: 130px;
-        left: 120px;
-        font-size: 23px;
-    }
-
-    .tmd1000 {
-        width: 200px;
-        left: 100px;
-        top: 550px;
-        font-size: 18px;
-    }
-
-    button {
-        width: 115px;
-        height: 35px;
-        left: 143px;
-        top: 640px;
-        border-radius: 5px;
-    }
-
-    button a {
-        font-size: 16px;
-        font-weight: 200;
-    }
-
-    .main-footer .descargar {
-        width: 600;
-        font-size: 16px;
-        padding-left: 1rem;
-    }
-
-    .navigation-menu2 {
-        padding-right: 1rem;
-    }
+  .main-descargar .stores {
+    width: 190px;
+    left: 170px;
+  }
 }
 
-@media (max-width:320px) {
-    nav {
-        width: 100%;
-    }
+@media (max-width: 425px) {
+  nav .logo {
+    font-size: 20px;
+  }
 
-    nav .logo {
-        font-size: 18px;
-    }
+  nav .menu a {
+    font-size: 18px;
+  }
 
-    .menu a {
-        font-size: 17px;
-    }
+  .main-section .eclipse {
+    width: 50px;
+    height: auto;
+    left: 67%;
+    top: 200px;
+  }
 
-    .eclipse {
-        width: 45px;
-        height: auto;
-        left: 200px;
-        top: 240px;
-    }
+  .main-section .img {
+    width: 100%;
+    height: auto;
+    left: 3%;
+    top: 150px;
+  }
 
-    .img {
-        width: 100%;
-        height: auto;
-        left: 0;
-        top: 230px;
-    }
+  .main-section .eclipse2 {
+    width: 80px;
+    height: auto;
+    left: 80px;
+    top: 410px;
+  }
 
-    .eclipse2 {
-        width: 70px;
-        height: auto;
-        left: 40px;
-        top: 420px;
-    }
+  .main-section .slm {
+    width: 200px;
+    top: 90px;
+    left: 140px;
+    font-size: 26px;
+  }
 
-    .slm {
-        top: 140px;
-        left: 80px;
-        font-size: 22px;
-    }
+  .main-section .tmd1000 {
+    width: 300px;
+    left: 70px;
+    top: 530px;
+    text-align: center;
+  }
 
-    .tmd1000 {
-        width: 200px;
-        left: 60px;
-        top: 560px;
-        text-align: center;
-    }
+  .main-section button {
+    width: 135px;
+    height: 45px;
+    left: 150px;
+    top: 600px;
+    border-radius: 10px;
+  }
 
-    button {
-        left: 100px;
-        border-radius: 4px;
-    }
+  .main-section button a {
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+  .main-footer .descargar {
+    width: 600;
+    font-size: 16px;
+    padding-left: 1rem;
+  }
+
+  .main-footer .navigation-menu2 {
+    padding-right: 1rem;
+  }
+
+  .main-footer .navigation-menu2 .text {
+    display: none;
+  }
+
+  /**PAGINA INICIAR SESION**/
+  .body-is {
+    background-color: rgba(0, 0, 0, 0.9098039216);
+  }
+
+  .body-is .close {
+    padding-left: 70%;
+  }
+
+  .body-is main .login-box {
+    width: 280px;
+    border-radius: 10px;
+  }
+
+  /* unirse */
+  header .close {
+    padding-left: 70%;
+  }
+
+  .main-unirse .ache1 {
+    left: 18%;
+    top: 17%;
+    font-size: 30px;
+  }
+
+  .main-unirse .unirse-box {
+    left: 17%;
+    top: 27%;
+    border-radius: 11px;
+    background-color: #000000;
+  }
+
+  /* descargar */
+  header .close {
+    padding-left: 70%;
+  }
+
+  .main-descargar h1 {
+    left: 80px;
+    font-size: 25px;
+    gap: 7px;
+  }
+
+  .main-descargar .phoneapp {
+    left: 90px;
+  }
+
+  .main-descargar .cloud1 {
+    top: 155px;
+    left: 150px;
+    width: 140px;
+  }
+
+  .main-descargar .stores {
+    width: 170px;
+    height: 100px;
+    left: 140px;
+  }
 }
+
+@media (max-width: 375px) {
+  header nav .logo {
+    font-size: 18px;
+  }
+
+  header nav .menu a {
+    font-size: 17px;
+  }
+
+  .main-section .eclipse {
+    width: 50px;
+    height: 50px;
+    left: 230px;
+    top: 220px;
+  }
+
+  .main-section .img {
+    width: 90%;
+    height: auto;
+    left: 20px;
+    top: 210px;
+  }
+
+  .main-section .eclipse2 {
+    width: 72px;
+    height: 72px;
+    left: 70px;
+    top: 400px;
+  }
+
+  .main-section .slm {
+    top: 130px;
+    left: 120px;
+    font-size: 23px;
+  }
+
+  .main-section .tmd1000 {
+    width: 200px;
+    left: 100px;
+    top: 550px;
+    font-size: 18px;
+  }
+
+  .main-section button {
+    width: 115px;
+    height: 35px;
+    left: 143px;
+    top: 640px;
+    border-radius: 5px;
+  }
+
+  .main-section button a {
+    font-size: 16px;
+    font-weight: 200;
+  }
+
+  .main-footer .descargar {
+    width: 600;
+    font-size: 16px;
+    padding-left: 1rem;
+  }
+
+  .main-footer .navigation-menu2 {
+    padding-right: 1rem;
+  }
+
+  /* unirse */
+  .main-unirse .ache1 {
+    left: 14%;
+    top: 17%;
+  }
+
+  .main-unirse .unirse-box {
+    left: 10%;
+    top: 27%;
+    border-radius: 11px;
+    background-color: #000000;
+  }
+
+  /* descargar */
+  .main-descargar h1 {
+    left: 70px;
+    font-size: 22px;
+  }
+
+  .main-descargar .phoneapp {
+    left: 60px;
+  }
+
+  .main-descargar .cloud1 {
+    top: 165px;
+    left: 122px;
+    width: 130px;
+  }
+
+  .main-descargar .stores {
+    left: 110px;
+  }
+}
+
+@media (max-width: 320px) {
+  header nav {
+    width: 100%;
+  }
+
+  header nav .logo {
+    font-size: 18px;
+  }
+
+  header nav .menu a {
+    font-size: 17px;
+  }
+
+  .main-section .eclipse {
+    width: 45px;
+    height: auto;
+    left: 200px;
+    top: 240px;
+  }
+
+  .main-section .img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 230px;
+  }
+
+  .main-section .eclipse2 {
+    width: 70px;
+    height: auto;
+    left: 40px;
+    top: 420px;
+  }
+
+  .main-section .slm {
+    top: 140px;
+    left: 80px;
+    font-size: 22px;
+  }
+
+  .main-section .tmd1000 {
+    width: 200px;
+    left: 60px;
+    top: 560px;
+    text-align: center;
+  }
+
+  .main-section button {
+    left: 100px;
+    border-radius: 4px;
+  }
+
+  .main-footer .container-footer .descargar {
+    padding-left: 1rem;
+  }
+
+  .main-footer .container-footer .navigation-menu2 {
+    padding-right: 1rem;
+  }
+
+  /* unirse */
+  .main-unirse .ache1 {
+    left: 12%;
+    top: 17%;
+    font-size: 27px;
+  }
+
+  .main-unirse .unirse-box {
+    left: 3%;
+    top: 27%;
+    border-radius: 11px;
+    background-color: #000000;
+  }
+
+  /* descargar */
+  .main-descargar h1 {
+    left: 57px;
+    font-size: 20px;
+  }
+
+  .main-descargar .phoneapp {
+    left: 37px;
+  }
+
+  .main-descargar .cloud1 {
+    left: 98px;
+  }
+
+  .main-descargar .stores {
+    left: 87px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
