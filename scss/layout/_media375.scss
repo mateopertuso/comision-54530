@@ -1,0 +1,121 @@
+@media (max-width:375px) {
+    header{
+
+        nav{
+            
+            .logo {
+                font-size: 18px;
+            }
+            
+            .menu{
+                
+                a {
+                    font-size: 17px;
+                }
+            } 
+        } 
+    }
+
+    .main-section{
+
+        .eclipse {
+            width: 50px;
+            height: 50px;
+            left: 230px;
+            top: 220px;
+        }
+        
+        .img {
+            width: 90%;
+            height: auto;
+            left: 20px;
+            top: 210px;
+        }
+        
+        .eclipse2 {
+            width: 72px;
+            height: 72px;
+            left: 70px;
+            top: 400px;
+        }
+        
+        .slm {
+            top: 130px;
+            left: 120px;
+            font-size: 23px;
+        }
+        
+        .tmd1000 {
+            width: 200px;
+            left: 100px;
+            top: 550px;
+            font-size: 18px;
+        }
+        
+        button {
+            width: 115px;
+            height: 35px;
+            left: 143px;
+            top: 640px;
+            border-radius: 5px;
+            a {
+                font-size: 16px;
+                font-weight: 200;
+            }
+        }
+    }
+
+
+    .main-footer{
+
+        .descargar {
+            width: 600;
+            font-size: 16px;
+            padding-left: 1rem;
+        }
+        
+        .navigation-menu2 {
+            padding-right: 1rem;
+        }
+    }
+
+    /* unirse */
+    .main-unirse{
+
+        .ache1 {
+            left: 14%;
+            top: 17%;
+        }
+        
+        .unirse-box {
+            left: 10%;
+            top: 27%;
+            border-radius: 11px;
+            background-color: #000000;
+        }
+    }
+        
+    /* descargar */
+
+    .main-descargar {
+
+        h1 {
+            left: 70px;
+            font-size: 22px;
+        }
+        
+        .phoneapp {
+            left: 60px;
+        }
+        
+        .cloud1 {
+            top: 165px;
+            left: 122px;
+            width: 130px;
+        }
+        
+        .stores {
+            left: 110px;
+        }
+    } 
+}

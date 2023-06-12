@@ -1,0 +1,92 @@
+.main-descargar {
+    h1 {
+        position: absolute;
+        left: 400px;
+        top: 245px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 70px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        gap: 13px;
+    }
+
+    span {
+        color: #111988;
+    }
+
+    p {
+        position: absolute;
+        width: 496px;
+        height: 50px;
+        left: 427px;
+        top: 330px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 32px;
+        color: white;
+    }
+
+    h2 {
+        position: absolute;
+        width: 320px;
+        height: 28px;
+        left: 500px;
+        top: 510px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: white;
+    }
+
+    .stores {
+        position: absolute;
+        width: 222px;
+        height: 136px;
+        left: 550px;
+        top: 560px;
+    }
+    
+    .cloud1 {
+        position: absolute;
+        left: 1303px;
+        top: 179px;
+        z-index: 1;
+    }
+    
+    .phoneapp {
+        position: absolute;
+        width: 255px;
+        height: 522px;
+        left: 1250px;
+        top: 229px;
+    }
+    
+    .eclipdesc {
+        position: absolute;
+        width: 216px;
+        height: 216px;
+        left: 400px;
+        top: 557px;
+        z-index: -1;
+    }
+    
+    .eclipdesc2 {
+        position: absolute;
+        width: 216px;
+        height: 216px;
+        left: 1370px;
+        top: 99px;
+        z-index: -2;
+    }
+
+}

@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    margin: 0 auto;
+
+    nav {
+        @include flex-index;
+        padding: 1.5rem 2rem;
+        width: 100%;
+        margin: 0;
+
+        .logo {
+            font-weight: 400;
+            font-size: 30px;
+
+            &:hover {
+                color: #0d00ca;
+            }
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: #0d00ca;
+            }
+        }
+
+        #toggle, label{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.unirse-page {
+    background: #000000e7;
+    opacity: 0.9;
+}
+
+.main-unirse {
+    .ache1 {
+        position: absolute;
+        height: 70px;
+        left: 370px;
+        top: 40%;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+
+        span {
+            color: #4070f4;
+            padding-left: 12px;
+            text-decoration: none;
+        }
+    }
+
+    .eclipse-unirse {
+        padding-left: 1000px;
+    }
+
+    .eclipse2-unirse {
+        display: flex;
+        padding-left: 200px;
+        z-index: -1;
+    }
+
+    .eclipse3-unirse {
+        display: flex;
+        padding-left: 1400px;
+    }
+
+    .unirse-box {
+        width: 320px;
+        height: 500px;
+        background: #353535;
+        color: #fff;
+        top: 260px;
+        left: 1200px;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 50px 30px;
+        border-radius: 15px;
+
+        label {
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .contra {
+            font-weight: 300;
+        }
+
+        .user {
+            font-weight: 300;
+        }
+
+        input {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1762A7;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+
+            &:hover {
+                cursor: pointer;
+                background: #fff;
+                color: #1762A7;
+            }
+        }
+
+        .have-acc {
+            h3 {
+                color: #ffffff;
+                width: 100%;
+                text-align: center;
+                font-weight: 300;
+            }
+
+            a {
+                width: 100%;
+                color: #4070f4;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 300;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,15 @@
+@mixin flex-index {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid ($col, $rows, $areas, $gap) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+    gap: $gap;
+}

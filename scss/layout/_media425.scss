@@ -1,0 +1,167 @@
+@media (max-width:425px) {
+
+    nav {
+
+        .logo {
+            font-size: 20px;
+        }
+
+        .menu {
+
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .main-section {
+
+        .eclipse {
+            width: 50px;
+            height: auto;
+            left: 67%;
+            top: 200px;
+        }
+
+        .img {
+            width: 100%;
+            height: auto;
+            left: 3%;
+            top: 150px;
+        }
+
+        .eclipse2 {
+            width: 80px;
+            height: auto;
+            left: 80px;
+            top: 410px;
+        }
+
+        .slm {
+            width: 200px;
+            top: 90px;
+            left: 140px;
+            font-size: 26px;
+        }
+
+        .tmd1000 {
+            width: 300px;
+            left: 70px;
+            top: 530px;
+            text-align: center;
+        }
+
+        button {
+            width: 135px;
+            height: 45px;
+            left: 150px;
+            top: 600px;
+            border-radius: 10px;
+
+            a {
+                font-size: 18px;
+                font-weight: 200;
+            }
+        }
+    }
+
+
+    .main-footer {
+
+        .descargar {
+            width: 600;
+            font-size: 16px;
+            padding-left: 1rem;
+        }
+
+        .navigation-menu2 {
+            padding-right: 1rem;
+
+            .text {
+                display: none;
+            }
+        }
+
+    }
+
+
+    /**PAGINA INICIAR SESION**/
+
+    .body-is {
+        background-color: #000000e8;
+
+        .close {
+            padding-left: 70%;
+        }
+
+        main {
+
+            .login-box {
+                width: 280px;
+                border-radius: 10px;
+            }
+        }
+    }
+
+
+
+    /* unirse */
+
+    header{
+        .close {
+            padding-left: 70%;
+        }
+
+    }
+
+    .main-unirse{
+
+        .ache1 {
+            left: 18%;
+            top: 17%;
+            font-size: 30px;
+        }
+        
+        .unirse-box {
+            left: 17%;
+            top: 27%;
+            border-radius: 11px;
+            background-color: #000000;
+        }
+    }
+
+    /* descargar */
+
+    header{
+        .close {
+            padding-left: 70%;
+        }
+
+    }
+
+    .main-descargar {
+
+        h1 {
+            left: 80px;
+            font-size: 25px;
+            gap: 7px;
+        }
+        
+        .phoneapp {
+            left: 90px;
+        }
+        
+        .cloud1 {
+            top: 155px;
+            left: 150px;
+            width: 140px;
+        }
+        
+        .stores {
+            width: 170px;
+            height: 100px;
+            left: 140px;
+        }
+        
+    }
+}

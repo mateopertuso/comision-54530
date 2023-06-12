@@ -1,0 +1,79 @@
+@media (max-width:830px) {
+    /* DESCUBRE */
+
+    main {
+        .grid {
+            width: 100%;
+            height: 600px;
+            margin: 5px auto;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "n1  n4"
+                "n2  n4"
+                "n3  n4"
+            ;
+            gap: 10px;
+
+
+            .item {
+                color: #FFFFFF;
+                text-align: center;
+            }
+
+            .item1 {
+                grid-area: n1;
+                padding-top: 120px;
+            }
+
+            .h1-descubrir {
+                font-weight: 370;
+                font-size: 30px;
+            }
+
+
+            .item2 {
+                grid-area: n2;
+                padding-top: 0px;
+            }
+
+            .img-desc {
+                grid-area: img-desc;
+                width: 300px;
+                padding-top: 10px;
+            }
+
+            .item3 {
+                grid-area: n3;
+                margin: 0px 30px 0px 30px;
+                p {
+                    font-size: 20px;
+                }
+            }
+
+
+            .item4 {
+                grid-area: n4;
+                
+                .albumtop {
+                    padding-left: 100px;
+                    margin-top: 130px;
+                    width: 340px;
+                }
+                
+                .disco1 {
+                    width: 120px;
+                    margin-top: -374px;
+                    margin-left: 42px;
+                }
+                
+                .disco2 {
+                    width: 120px;
+                    height: 120px;
+                    margin-left: 277px;
+                    margin-top: -217px;
+                }
+            }
+        }
+    }
+}
