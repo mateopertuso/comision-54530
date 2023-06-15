@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,100;1,300;1,400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,7 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+
 header nav {
   display: flex;
   position: fixed;
@@ -24,26 +26,33 @@ header nav {
   width: 100%;
   margin: 0;
 }
+
 header nav .logo {
   font-weight: 400;
   font-size: 30px;
 }
+
 header nav .logo:hover {
   color: #0d00ca;
 }
+
 header nav ul {
   list-style: none;
   display: flex;
   gap: 3rem;
 }
+
 header nav a {
   text-decoration: none;
   color: white;
 }
+
 header nav a:hover {
   color: #0d00ca;
 }
-header nav #toggle, header nav label {
+
+header nav #toggle,
+header nav label {
   display: none;
 }
 
@@ -51,6 +60,7 @@ header nav #toggle, header nav label {
   display: flex;
   max-width: 100%;
 }
+
 .main-section .eclipse {
   position: absolute;
   width: 160px;
@@ -58,6 +68,7 @@ header nav #toggle, header nav label {
   left: 590px;
   top: 160px;
 }
+
 .main-section .img {
   position: absolute;
   width: 500px;
@@ -65,6 +76,7 @@ header nav #toggle, header nav label {
   left: 280px;
   top: 200px;
 }
+
 .main-section .eclipse2 {
   position: absolute;
   width: 220px;
@@ -72,6 +84,7 @@ header nav #toggle, header nav label {
   left: 250px;
   top: 430px;
 }
+
 .main-section .slm {
   position: absolute;
   width: 500px;
@@ -83,6 +96,7 @@ header nav #toggle, header nav label {
   font-size: 64px;
   line-height: 75px;
 }
+
 .main-section .tmd1000 {
   position: absolute;
   width: 570px;
@@ -96,6 +110,7 @@ header nav #toggle, header nav label {
   line-height: 28px;
   color: #FFFFFF;
 }
+
 .main-section button {
   position: absolute;
   width: 180px;
@@ -109,19 +124,23 @@ header nav #toggle, header nav label {
   font-size: 20px;
   text-align: center;
 }
+
 .main-section button:hover {
   transform: scale(1.1);
   transition-duration: 1.2s;
 }
+
 .main-section button a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: "Roboto";
   font-style: normal;
 }
+
 .main-section button a:hover {
   color: #000000;
 }
+
 .main-section .headph {
   position: absolute;
   width: 300px;
@@ -140,6 +159,7 @@ header nav #toggle, header nav label {
   bottom: 0px;
   background: #000000;
 }
+
 .main-footer .descargar {
   font-family: "Roboto";
   font-style: normal;
@@ -155,9 +175,11 @@ header nav #toggle, header nav label {
   padding-left: 10rem;
   padding-top: 1rem;
 }
+
 .main-footer .descargar:hover {
   color: #0d00ca;
 }
+
 .main-footer ul {
   display: flex;
   flex-wrap: wrap;
@@ -172,10 +194,12 @@ header nav #toggle, header nav label {
   padding-top: 1rem;
   list-style: none;
 }
+
 .main-footer ul a {
   color: white;
   text-decoration: none;
 }
+
 .main-footer ul a:hover {
   color: #0d00ca;
 }
@@ -195,49 +219,60 @@ main .grid {
   height: 750px;
   margin: 10px auto;
 }
+
 main .grid .item {
   color: #FFFFFF;
   text-align: center;
 }
+
 main .grid .item1 {
   grid-area: n1;
   padding-top: 80px;
 }
+
 main .grid .item1 .h1-descubrir {
   font-weight: 370;
   font-size: 45px;
 }
+
 main .grid .item2 {
   grid-area: n2;
   padding-top: 0px;
 }
+
 main .grid .item2 .img-desc {
   grid-area: img-desc;
   left: 240px;
 }
+
 main .grid .item3 {
   grid-area: n3;
   margin: 30px 150px 0px 150px;
 }
+
 main .grid .item3 p {
   top: 600px;
   font-weight: 300;
   font-size: 25px;
   padding: 0px 20px;
 }
+
 main .grid .item4 {
   grid-area: n4;
   display: grid;
 }
+
 main .grid .item4 .albumtop {
   padding-left: 100px;
   margin-top: 50px;
 }
+
 main .grid .item4 .disco1 {
   margin-top: -660px;
   margin-left: -15px;
   z-index: -1;
 }
+
 main .grid .item4 .disco2 {
   width: 239px;
   height: 239px;
@@ -259,6 +294,7 @@ main .login-box {
   padding: 50px 30px;
   border-radius: 15px;
 }
+
 main .login-box h1 {
   margin: 0;
   padding: 0 0 30px;
@@ -266,21 +302,26 @@ main .login-box h1 {
   font-size: 22px;
   font-weight: 100;
 }
+
 main .login-box label {
   margin: 0;
   padding: 0;
   display: block;
 }
+
 main .login-box label .contra {
   font-weight: 300;
 }
+
 main .login-box label .user {
   font-weight: 300;
 }
+
 main .login-box input {
   width: 100%;
   margin-bottom: 40px;
 }
+
 main .login-box input[type=text],
 main .login-box input[type=password] {
   border: none;
@@ -291,6 +332,7 @@ main .login-box input[type=password] {
   color: #fff;
   font-size: 16px;
 }
+
 main .login-box input[type=submit] {
   border: none;
   outline: none;
@@ -300,6 +342,7 @@ main .login-box input[type=submit] {
   font-size: 18px;
   border-radius: 20px;
 }
+
 main .login-box input[type=submit]:hover {
   cursor: pointer;
   background: #fff;
@@ -326,23 +369,28 @@ main .login-box input[type=submit]:hover {
   text-align: center;
   color: #ffffff;
 }
+
 .main-unirse .ache1 span {
   color: #4070f4;
   padding-left: 12px;
   text-decoration: none;
 }
+
 .main-unirse .eclipse-unirse {
   padding-left: 1000px;
 }
+
 .main-unirse .eclipse2-unirse {
   display: flex;
   padding-left: 200px;
   z-index: -1;
 }
+
 .main-unirse .eclipse3-unirse {
   display: flex;
   padding-left: 1400px;
 }
+
 .main-unirse .unirse-box {
   width: 320px;
   height: 500px;
@@ -355,21 +403,26 @@ main .login-box input[type=submit]:hover {
   padding: 50px 30px;
   border-radius: 15px;
 }
+
 .main-unirse .unirse-box label {
   margin: 0;
   padding: 0;
   display: block;
 }
+
 .main-unirse .unirse-box .contra {
   font-weight: 300;
 }
+
 .main-unirse .unirse-box .user {
   font-weight: 300;
 }
+
 .main-unirse .unirse-box input {
   width: 100%;
   margin-bottom: 40px;
 }
+
 .main-unirse .unirse-box input[type=text],
 .main-unirse .unirse-box input[type=password],
 .main-unirse .unirse-box input[type=email] {
@@ -381,6 +434,7 @@ main .login-box input[type=submit]:hover {
   color: #fff;
   font-size: 16px;
 }
+
 .main-unirse .unirse-box input[type=submit] {
   border: none;
   outline: none;
@@ -390,17 +444,20 @@ main .login-box input[type=submit]:hover {
   font-size: 18px;
   border-radius: 20px;
 }
+
 .main-unirse .unirse-box input[type=submit]:hover {
   cursor: pointer;
   background: #fff;
   color: #1762A7;
 }
+
 .main-unirse .unirse-box .have-acc h3 {
   color: #ffffff;
   width: 100%;
   text-align: center;
   font-weight: 300;
 }
+
 .main-unirse .unirse-box .have-acc a {
   width: 100%;
   color: #4070f4;
@@ -408,6 +465,7 @@ main .login-box input[type=submit]:hover {
   font-size: 14px;
   font-weight: 300;
 }
+
 .main-unirse .unirse-box .have-acc a:hover {
   text-decoration: underline;
 }
@@ -427,9 +485,11 @@ main .login-box input[type=submit]:hover {
   color: white;
   gap: 13px;
 }
+
 .main-descargar span {
   color: #111988;
 }
+
 .main-descargar p {
   position: absolute;
   width: 496px;
@@ -443,6 +503,7 @@ main .login-box input[type=submit]:hover {
   line-height: 32px;
   color: white;
 }
+
 .main-descargar h2 {
   position: absolute;
   width: 320px;
@@ -457,6 +518,7 @@ main .login-box input[type=submit]:hover {
   text-align: center;
   color: white;
 }
+
 .main-descargar .stores {
   position: absolute;
   width: 222px;
@@ -464,12 +526,14 @@ main .login-box input[type=submit]:hover {
   left: 550px;
   top: 560px;
 }
+
 .main-descargar .cloud1 {
   position: absolute;
   left: 1303px;
   top: 179px;
   z-index: 1;
 }
+
 .main-descargar .phoneapp {
   position: absolute;
   width: 255px;
@@ -477,6 +541,7 @@ main .login-box input[type=submit]:hover {
   left: 1250px;
   top: 229px;
 }
+
 .main-descargar .eclipdesc {
   position: absolute;
   width: 216px;
@@ -485,6 +550,7 @@ main .login-box input[type=submit]:hover {
   top: 557px;
   z-index: -1;
 }
+
 .main-descargar .eclipdesc2 {
   position: absolute;
   width: 216px;
@@ -498,33 +564,39 @@ main .login-box input[type=submit]:hover {
   nav {
     width: 100%;
   }
+
   nav .menu {
     font-size: 20px;
     gap: 40px;
   }
+
   .main-section .eclipse {
     width: 130px;
     height: 130px;
     left: 440px;
     top: 190px;
   }
+
   .main-section .img {
     width: 470px;
     height: 400px;
     left: 140px;
     top: 210px;
   }
+
   .main-section .eclipse2 {
     width: 170px;
     height: 170px;
     left: 140px;
     top: 450px;
   }
+
   .main-section .slm {
     width: 350px;
     left: 50rem;
     font-size: 45px;
   }
+
   .main-section .tmd1000 {
     width: 350px;
     left: 50rem;
@@ -532,6 +604,7 @@ main .login-box input[type=submit]:hover {
     font-size: 22px;
     line-height: 22px;
   }
+
   .main-section button {
     width: 170px;
     height: 55px;
@@ -539,16 +612,19 @@ main .login-box input[type=submit]:hover {
     top: 24rem;
     border-radius: 12px;
   }
+
   .main-section .headph {
     width: 220px;
     height: 220px;
     left: 57rem;
     top: 32rem;
   }
+
   .main-footer .container-footer {
     height: 100px;
     bottom: 0px;
   }
+
   .main-footer .descargar {
     font-weight: 400;
     font-size: 22px;
@@ -556,6 +632,7 @@ main .login-box input[type=submit]:hover {
     padding-left: 10rem;
     padding-bottom: 1rem;
   }
+
   .main-footer .navigation-menu2 {
     font-size: 22px;
     line-height: 28px;
@@ -563,23 +640,28 @@ main .login-box input[type=submit]:hover {
     padding-bottom: 1rem;
     padding-right: 10rem;
   }
+
   /* UNIRSE */
   .main-unirse .eclipse-unirse {
     display: none;
   }
+
   .main-unirse .eclipse3-unirse {
     display: none;
   }
+
   .main-unirse .eclipse2-unirse {
     margin-top: 90px;
     margin-left: 230px;
     width: 350px;
   }
+
   .main-unirse .ache1 {
     left: 33%;
     top: 18%;
     font-size: 47px;
   }
+
   .main-unirse .unirse-box {
     width: 320px;
     top: 270px;
@@ -589,39 +671,48 @@ main .login-box input[type=submit]:hover {
     padding: 50px 30px;
     border-radius: 15px;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 260px;
     top: 245px;
     font-size: 46px;
   }
+
   .main-descargar p {
     left: 270px;
     top: 320px;
   }
+
   .main-descargar h2 {
     left: 350px;
   }
+
   .main-descargar .stores {
     width: 220px;
     left: 410px;
   }
+
   .main-descargar .cloud1 {
     left: 970px;
   }
+
   .main-descargar .phoneapp {
     left: 920px;
   }
+
   .main-descargar .eclipdesc {
     width: 210px;
     height: 210px;
     left: 280px;
   }
+
   .main-descargar .eclipdesc2 {
     width: 200px;
     height: 200px;
     left: 1060px;
   }
+
   /* DESCUBRE */
   main .grid {
     width: 100%;
@@ -641,39 +732,48 @@ main .login-box input[type=submit]:hover {
         padding-top: 0px;
     }  */
   }
+
   main .grid .item1 {
     grid-area: n1;
     padding-top: 120px;
   }
+
   main .grid .h1-descubrir {
     font-weight: 370;
     font-size: 40px;
   }
+
   main .grid .img-desc {
     grid-area: img-desc;
     width: 400px;
     padding-top: 10px;
   }
+
   main .grid .item3 {
     grid-area: n3;
     margin: 0px 150px 0px 150px;
   }
+
   main .grid .item3 p {
     font-size: 23px;
   }
+
   main .grid .item4 {
     grid-area: n4;
   }
+
   main .grid .item4 .albumtop {
     padding-left: 100px;
     margin-top: 90px;
     width: 500px;
   }
+
   main .grid .item4 .disco1 {
     width: 180px;
     margin-top: -510px;
     margin-left: 15px;
   }
+
   main .grid .item4 .disco2 {
     width: 180px;
     height: 180px;
@@ -681,10 +781,12 @@ main .login-box input[type=submit]:hover {
     margin-top: -140px;
   }
 }
+
 @media (max-width: 1024px) {
   nav {
     width: 100%;
   }
+
   .main-section .eclipse {
     position: absolute;
     width: 100px;
@@ -692,6 +794,7 @@ main .login-box input[type=submit]:hover {
     left: 400px;
     top: 190px;
   }
+
   .main-section .img {
     position: absolute;
     width: 450px;
@@ -699,18 +802,21 @@ main .login-box input[type=submit]:hover {
     left: 120px;
     top: 200px;
   }
+
   .main-section .eclipse2 {
     width: 150px;
     height: 150px;
     left: 130px;
     top: 420px;
   }
+
   .main-section .slm {
     position: absolute;
     width: 350px;
     left: 40rem;
     font-size: 40px;
   }
+
   .main-section .tmd1000 {
     position: absolute;
     width: 310px;
@@ -720,6 +826,7 @@ main .login-box input[type=submit]:hover {
     font-size: 20px;
     line-height: 20px;
   }
+
   .main-section button {
     width: 155px;
     height: 50px;
@@ -727,39 +834,46 @@ main .login-box input[type=submit]:hover {
     top: 24.5rem;
     border-radius: 10px;
   }
+
   .main-section .headph {
     width: 180px;
     height: 180px;
     left: 45rem;
     top: 33rem;
   }
+
   .main-footer .container-footer {
     height: 100px;
     left: 0px;
     bottom: 0px;
     right: 0px;
   }
+
   .main-footer .container-footer .descargar {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     padding-left: 5rem;
   }
+
   .main-footer .container-footer .navigation-menu2 {
     font-size: 22px;
     line-height: 28px;
     gap: 30px;
     padding-right: 5rem;
   }
+
   /**PAGINA UNIRSE**/
   .main-unirse .eclipse2-unirse {
     display: none;
   }
+
   .main-unirse .ache1 {
     left: 29%;
     top: 16%;
     font-size: 45px;
   }
+
   .main-unirse .unirse-box {
     left: 32%;
     top: 24%;
@@ -768,86 +882,105 @@ main .login-box input[type=submit]:hover {
     padding: 50px 30px;
     border-radius: 15px;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 140px;
     top: 230px;
     font-size: 40px;
   }
+
   .main-descargar .main-descargar p {
     left: 155px;
     top: 300px;
     font-size: 22px;
   }
+
   .main-descargar .main-descargar h2 {
     left: 200px;
     top: 630px;
   }
+
   .main-descargar .stores {
     width: 200px;
     height: 120px;
     left: 260px;
     top: 680px;
   }
+
   .main-descargar .eclipdesc {
     width: 180px;
     height: 180px;
     top: 700px;
     left: 200px;
   }
+
   .main-descargar .cloud1 {
     left: 856px;
   }
+
   .main-descargar .phoneapp {
     left: 800px;
   }
+
   .main-descargar .eclipdesc2 {
     width: 200px;
     height: 200px;
     left: 1000px;
   }
+
   /* DESCUBRE */
   main .grid .item {
     color: #FFFFFF;
     text-align: center;
   }
+
   main .grid .item1 {
     grid-area: n1;
     padding-top: 120px;
   }
+
   main .grid .item1 .h1-descubrir {
     font-weight: 370;
     font-size: 35px;
   }
+
   main .grid .item2 {
     grid-area: n2;
     padding-top: 0px;
   }
+
   main .grid .img-desc {
     grid-area: img-desc;
     width: 350px;
     padding-top: 10px;
   }
+
   main .grid .item3 {
     grid-area: n3;
     margin: 0px 30px 0px 30px;
   }
+
   main .grid .item3 p {
     font-size: 20px;
   }
+
   main .grid .item4 {
     grid-area: n4;
   }
+
   main .grid .item4 .albumtop {
     padding-left: 100px;
     margin-top: 130px;
     width: 380px;
   }
+
   main .grid .item4 .disco1 {
     width: 140px;
     margin-top: -410px;
     margin-left: 34px;
   }
+
   main .grid .item4 .disco2 {
     width: 140px;
     height: 140px;
@@ -855,7 +988,9 @@ main .login-box input[type=submit]:hover {
     margin-top: -200px;
   }
 }
+
 @media (max-width: 830px) {
+
   /* DESCUBRE */
   main .grid {
     width: 100%;
@@ -866,47 +1001,58 @@ main .login-box input[type=submit]:hover {
     grid-template-areas: "n1  n4" "n2  n4" "n3  n4";
     gap: 10px;
   }
+
   main .grid .item {
     color: #FFFFFF;
     text-align: center;
   }
+
   main .grid .item1 {
     grid-area: n1;
     padding-top: 120px;
   }
+
   main .grid .h1-descubrir {
     font-weight: 370;
     font-size: 30px;
   }
+
   main .grid .item2 {
     grid-area: n2;
     padding-top: 0px;
   }
+
   main .grid .img-desc {
     grid-area: img-desc;
     width: 300px;
     padding-top: 10px;
   }
+
   main .grid .item3 {
     grid-area: n3;
     margin: 0px 30px 0px 30px;
   }
+
   main .grid .item3 p {
     font-size: 20px;
   }
+
   main .grid .item4 {
     grid-area: n4;
   }
+
   main .grid .item4 .albumtop {
     padding-left: 100px;
     margin-top: 130px;
     width: 340px;
   }
+
   main .grid .item4 .disco1 {
     width: 120px;
     margin-top: -374px;
     margin-left: 42px;
   }
+
   main .grid .item4 .disco2 {
     width: 120px;
     height: 120px;
@@ -914,54 +1060,65 @@ main .login-box input[type=submit]:hover {
     margin-top: -217px;
   }
 }
+
 @media (max-width: 768px) {
   header nav {
     width: 100%;
     background-color: #000000;
     border-radius: 0 0 20px 20px;
   }
+
   header nav .logo {
     font-size: 25px;
   }
+
   header nav label {
     display: inline-flex;
     color: white;
     cursor: pointer;
   }
-  header nav #toggle:checked ~ .menu {
+
+  header nav #toggle:checked~.menu {
     height: 100%;
   }
+
   header nav .menu {
     width: 100%;
     height: 0;
     overflow: hidden;
   }
+
   header nav .menu ul {
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 0;
   }
+
   header nav .menu ul a {
     font-size: 20px;
   }
+
   .main-section .eclipse {
     width: 80px;
     height: 80px;
     left: 63%;
     top: 190px;
   }
+
   .main-section .img {
     width: 400px;
     height: auto;
     left: 30%;
     top: 190px;
   }
+
   .main-section .eclipse2 {
     width: 120px;
     height: 120px;
     left: 32%;
     top: 400px;
   }
+
   .main-section .slm {
     width: 300px;
     top: 110px;
@@ -969,6 +1126,7 @@ main .login-box input[type=submit]:hover {
     font-size: 30px;
     z-index: -1;
   }
+
   .main-section .tmd1000 {
     position: absolute;
     width: 300px;
@@ -976,6 +1134,7 @@ main .login-box input[type=submit]:hover {
     top: 550px;
     text-align: center;
   }
+
   .main-section button {
     position: absolute;
     width: 135px;
@@ -984,22 +1143,27 @@ main .login-box input[type=submit]:hover {
     top: 620px;
     border-radius: 10px;
   }
+
   .main-section button a {
     font-size: 18px;
     font-weight: 200;
   }
+
   .main-section .headph {
     display: none;
   }
+
   .main-footer .container-footer {
     height: auto;
   }
+
   .main-footer .container-footer .descargar {
     font-weight: 300;
     font-size: 20px;
     line-height: 28px;
     padding-left: 3rem;
   }
+
   .main-footer .container-footer .navigation-menu2 {
     font-size: 20px;
     font-weight: 300;
@@ -1007,67 +1171,83 @@ main .login-box input[type=submit]:hover {
     gap: 27px;
     padding-right: 3rem;
   }
+
   .main-footer .container-footer .navigation-menu2 .text {
     display: none;
   }
+
   /**PAGINA INICIAR SESION**/
   .close img {
     height: 60px;
   }
+
   .login-box {
     width: 280px;
     border-radius: 11px;
   }
+
   .login-box h1 {
     font-size: 18px;
   }
+
   .login-box input {
     width: 100%;
     margin-bottom: 40px;
   }
+
   /* PAGINA UNIRSE */
   .main-unirse .ache1 {
     left: 23%;
     top: 18%;
     font-size: 45px;
   }
+
   .main-unirse .unirse-box {
     top: 28%;
     width: 300px;
     border-radius: 11px;
     background-color: #000000;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 200px;
     top: 100px;
     font-size: 36px;
   }
+
   .main-descargar p {
     display: none;
   }
+
   .main-descargar .phoneapp {
     top: 210px;
     left: 270px;
   }
+
   .main-descargar .cloud1 {
     left: 325px;
     top: 160px;
   }
+
   .main-descargar h2 {
     display: none;
   }
+
   .main-descargar .stores {
     width: 220px;
     top: 749px;
     left: 287px;
   }
+
   .main-descargar .eclipdesc {
     display: none;
   }
+
   .main-descargar .eclipdesc2 {
     display: none;
   }
+
   main .grid {
     width: 100%;
     height: 700px;
@@ -1077,51 +1257,62 @@ main .login-box input[type=submit]:hover {
     grid-template-areas: "n1  n1" "n2  n2" "n4  n4" "n3  n3";
     gap: 10px;
   }
+
   main .grid .item {
     color: #FFFFFF;
     text-align: center;
   }
+
   main .grid .item1 {
     grid-area: n1;
     padding-top: 0px;
   }
+
   main .grid .item1 .h1-descubrir {
     font-weight: 370;
     font-size: 30px;
     padding-top: 0px;
   }
+
   main .grid .item2 {
     grid-area: n2;
     padding-top: 0px;
   }
+
   main .grid .img-desc {
     grid-area: img-desc;
     width: 300px;
     padding-top: 10px;
   }
+
   main .grid .item3 {
     grid-area: n3;
     margin: 0px 30px 0px 30px;
   }
+
   main .grid .item3 p {
     font-size: 20px;
   }
+
   main .grid .item4 {
     grid-area: n4;
     justify-content: center;
     align-items: center;
   }
+
   main .grid .item4 .albumtop {
     margin-left: 15%;
     margin-top: 0px;
     width: 250px;
     padding: 0px 0px;
   }
+
   main .grid .item4 .disco1 {
     width: 100px;
     margin-top: -535px;
     margin-left: 8px;
   }
+
   main .grid .item4 .disco2 {
     width: 100px;
     height: 100px;
@@ -1129,113 +1320,138 @@ main .login-box input[type=submit]:hover {
     margin-top: -93px;
   }
 }
+
 @media (max-width: 630px) {
+
   /* descargar */
   .main-descargar h1 {
     left: 140px;
     top: 100px;
     font-size: 33px;
   }
+
   .main-descargar .phoneapp {
     top: 210px;
     left: 200px;
   }
+
   .main-descargar .cloud1 {
     left: 255px;
     top: 160px;
   }
+
   .main-descargar .stores {
     width: 200px;
     top: 749px;
     left: 230px;
   }
 }
+
 @media (max-width: 585px) {
+
   /* PAGINA UNIRSE */
   .main-unirse .ache1 {
     left: 18%;
     top: 17%;
     font-size: 38px;
   }
+
   .main-unirse .unirse-box {
     left: 20%;
     top: 27%;
     border-radius: 11px;
     background-color: #000000;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 133px;
     font-size: 30px;
   }
+
   .main-descargar .phoneapp {
     top: 200px;
     left: 170px;
   }
+
   .main-descargar .cloud1 {
     left: 225px;
     top: 150px;
   }
+
   .main-descargar .stores {
     width: 200px;
     top: 740px;
     left: 200px;
   }
 }
+
 @media (max-width: 475px) {
+
   /* descargar */
   .main-descargar h1 {
     left: 100px;
     font-size: 28px;
   }
+
   .main-descargar .phoneapp {
     left: 130px;
   }
+
   .main-descargar .cloud1 {
     left: 185px;
   }
+
   .main-descargar .stores {
     width: 190px;
     left: 170px;
   }
 }
+
 @media (max-width: 425px) {
   nav .logo {
     font-size: 20px;
   }
+
   nav .menu a {
     font-size: 18px;
   }
+
   .main-section .eclipse {
     width: 50px;
     height: auto;
     left: 67%;
     top: 200px;
   }
+
   .main-section .img {
     width: 100%;
     height: auto;
     left: 3%;
     top: 150px;
   }
+
   .main-section .eclipse2 {
     width: 80px;
     height: auto;
     left: 80px;
     top: 410px;
   }
+
   .main-section .slm {
     width: 200px;
     top: 90px;
     left: 140px;
     font-size: 26px;
   }
+
   .main-section .tmd1000 {
     width: 300px;
     left: 70px;
     top: 530px;
     text-align: center;
   }
+
   .main-section button {
     width: 135px;
     height: 45px;
@@ -1243,106 +1459,129 @@ main .login-box input[type=submit]:hover {
     top: 600px;
     border-radius: 10px;
   }
+
   .main-section button a {
     font-size: 18px;
     font-weight: 200;
   }
+
   .main-footer .descargar {
     width: 600;
     font-size: 16px;
     padding-left: 1rem;
   }
+
   .main-footer .navigation-menu2 {
     padding-right: 1rem;
   }
+
   .main-footer .navigation-menu2 .text {
     display: none;
   }
+
   /**PAGINA INICIAR SESION**/
   .body-is {
     background-color: rgba(0, 0, 0, 0.9098039216);
   }
+
   .body-is .close {
     padding-left: 70%;
   }
+
   .body-is main .login-box {
     width: 280px;
     border-radius: 10px;
   }
+
   /* unirse */
   header .close {
     padding-left: 70%;
   }
+
   .main-unirse .ache1 {
     left: 18%;
     top: 17%;
     font-size: 30px;
   }
+
   .main-unirse .unirse-box {
     left: 17%;
     top: 27%;
     border-radius: 11px;
     background-color: #000000;
   }
+
   /* descargar */
   header .close {
     padding-left: 70%;
   }
+
   .main-descargar h1 {
     left: 80px;
     font-size: 25px;
     gap: 7px;
   }
+
   .main-descargar .phoneapp {
     left: 90px;
   }
+
   .main-descargar .cloud1 {
     top: 155px;
     left: 150px;
     width: 140px;
   }
+
   .main-descargar .stores {
     width: 170px;
     height: 100px;
     left: 140px;
   }
 }
+
 @media (max-width: 375px) {
   header nav .logo {
     font-size: 18px;
   }
+
   header nav .menu a {
     font-size: 17px;
   }
+
   .main-section .eclipse {
     width: 50px;
     height: 50px;
     left: 230px;
     top: 220px;
   }
+
   .main-section .img {
     width: 90%;
     height: auto;
     left: 20px;
     top: 210px;
   }
+
   .main-section .eclipse2 {
     width: 72px;
     height: 72px;
     left: 70px;
     top: 400px;
   }
+
   .main-section .slm {
     top: 130px;
     left: 120px;
     font-size: 23px;
   }
+
   .main-section .tmd1000 {
     width: 200px;
     left: 100px;
     top: 550px;
     font-size: 18px;
   }
+
   .main-section button {
     width: 115px;
     height: 35px;
@@ -1350,56 +1589,69 @@ main .login-box input[type=submit]:hover {
     top: 640px;
     border-radius: 5px;
   }
+
   .main-section button a {
     font-size: 16px;
     font-weight: 200;
   }
+
   .main-footer .descargar {
     width: 600;
     font-size: 16px;
     padding-left: 1rem;
   }
+
   .main-footer .navigation-menu2 {
     padding-right: 1rem;
   }
+
   /* unirse */
   .main-unirse .ache1 {
     left: 14%;
     top: 17%;
   }
+
   .main-unirse .unirse-box {
     left: 10%;
     top: 27%;
     border-radius: 11px;
     background-color: #000000;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 70px;
     font-size: 22px;
   }
+
   .main-descargar .phoneapp {
     left: 60px;
   }
+
   .main-descargar .cloud1 {
     top: 165px;
     left: 122px;
     width: 130px;
   }
+
   .main-descargar .stores {
     left: 110px;
   }
 }
+
 @media (max-width: 320px) {
   header nav {
     width: 100%;
   }
+
   header nav .logo {
     font-size: 18px;
   }
+
   header nav .menu a {
     font-size: 17px;
   }
+
   .main-section .eclipse {
     width: 45px;
     height: auto;
@@ -1407,6 +1659,7 @@ main .login-box input[type=submit]:hover {
     top: 240px;
     z-index: -2;
   }
+
   .main-section .img {
     width: 100%;
     height: auto;
@@ -1414,6 +1667,7 @@ main .login-box input[type=submit]:hover {
     top: 230px;
     z-index: -1;
   }
+
   .main-section .eclipse2 {
     width: 70px;
     height: auto;
@@ -1421,50 +1675,61 @@ main .login-box input[type=submit]:hover {
     top: 420px;
     z-index: -2;
   }
+
   .main-section .slm {
     top: 140px;
     left: 80px;
     font-size: 22px;
   }
+
   .main-section .tmd1000 {
     width: 200px;
     left: 60px;
     top: 560px;
     text-align: center;
   }
+
   .main-section button {
     left: 100px;
     border-radius: 4px;
   }
+
   .main-footer .container-footer .descargar {
     padding-left: 1rem;
   }
+
   .main-footer .container-footer .navigation-menu2 {
     padding-right: 1rem;
   }
+
   /* unirse */
   .main-unirse .ache1 {
     left: 12%;
     top: 17%;
     font-size: 27px;
   }
+
   .main-unirse .unirse-box {
     left: 3%;
     top: 27%;
     border-radius: 11px;
     background-color: #000000;
   }
+
   /* descargar */
   .main-descargar h1 {
     left: 57px;
     font-size: 20px;
   }
+
   .main-descargar .phoneapp {
     left: 37px;
   }
+
   .main-descargar .cloud1 {
     left: 98px;
   }
+
   .main-descargar .stores {
     left: 87px;
   }
