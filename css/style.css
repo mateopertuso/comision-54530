@@ -27,15 +27,6 @@ header nav {
   margin: 0;
 }
 
-header nav .logo {
-  font-weight: 400;
-  font-size: 30px;
-}
-
-header nav .logo:hover {
-  color: #0d00ca;
-}
-
 header nav ul {
   list-style: none;
   display: flex;
@@ -1068,10 +1059,6 @@ main .login-box input[type=submit]:hover {
     border-radius: 0 0 20px 20px;
   }
 
-  header nav .logo {
-    font-size: 25px;
-  }
-
   header nav label {
     display: inline-flex;
     color: white;
@@ -1412,10 +1399,6 @@ main .login-box input[type=submit]:hover {
 }
 
 @media (max-width: 425px) {
-  nav .logo {
-    font-size: 20px;
-  }
-
   nav .menu a {
     font-size: 18px;
   }
@@ -1543,10 +1526,6 @@ main .login-box input[type=submit]:hover {
 }
 
 @media (max-width: 375px) {
-  header nav .logo {
-    font-size: 18px;
-  }
-
   header nav .menu a {
     font-size: 17px;
   }
@@ -1645,10 +1624,6 @@ main .login-box input[type=submit]:hover {
 @media (max-width: 320px) {
   header nav {
     width: 100%;
-  }
-
-  header nav .logo {
-    font-size: 18px;
   }
 
   header nav .menu a {
