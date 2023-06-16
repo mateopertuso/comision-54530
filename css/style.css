@@ -1103,6 +1103,7 @@ main .login-box input[type=submit]:hover {
     height: 80px;
     left: 63%;
     top: 190px;
+    z-index: -2;
   }
 
   .main-section .img {
@@ -1110,6 +1111,7 @@ main .login-box input[type=submit]:hover {
     height: auto;
     left: 30%;
     top: 190px;
+    z-index: -1;
   }
 
   .main-section .eclipse2 {
@@ -1117,6 +1119,7 @@ main .login-box input[type=submit]:hover {
     height: 120px;
     left: 32%;
     top: 400px;
+    z-index: -2;
   }
 
   .main-section .slm {
